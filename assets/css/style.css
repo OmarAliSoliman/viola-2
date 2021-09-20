@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -42,7 +43,6 @@ button {
   text-decoration: none !important;
   outline: none;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -66,7 +66,6 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -87,7 +86,14 @@ button {
   background: #a3294b;
   position: absolute;
   left: -34px;
-  animation: pinkbar 1.5s infinite ease;
+  -webkit-animation: pinkbar 1.5s infinite ease;
+          animation: pinkbar 1.5s infinite ease;
+}
+
+@-webkit-keyframes pinkbar {
+  50% {
+    left: 196px;
+  }
 }
 
 @keyframes pinkbar {
@@ -97,10 +103,19 @@ button {
 }
 .splash div {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .splash.displayNone {
@@ -124,9 +139,12 @@ button {
   top: 0;
   left: -400px;
   background-color: #fff;
-  box-shadow: 0 22px 22px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 22px 22px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 22px 22px rgba(0, 0, 0, 0.05);
   overflow-x: hidden;
   padding-top: 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   text-align: center;
   padding-bottom: 10px;
@@ -139,6 +157,8 @@ button {
   text-decoration: none;
   font-size: 18px;
   color: #000;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .sidenav a:hover {
@@ -168,9 +188,15 @@ button {
   background-color: #63c9c6;
   color: #fff;
   width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center !important;
-  align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
   text-align: center !important;
   padding: 10px;
   border-radius: 30px;
@@ -178,23 +204,40 @@ button {
 .sidenav .social {
   text-align: center;
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   bottom: 10px;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 .sidenav .social a {
   width: 35px;
   height: 35px;
   border: 1px solid #999;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 5px;
 }
 .sidenav .social a i {
@@ -229,14 +272,22 @@ button {
   background-color: #fff;
 }
 .my-navbar .navbar-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .my-navbar .navbar-parent .logo {
   width: 133px;
 }
 .my-navbar .navbar-parent .links .ul-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 0;
 }
@@ -273,9 +324,15 @@ button {
 .header {
   height: 100vh;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
 }
 .header:after {
@@ -325,13 +382,21 @@ button {
 }
 .header .header-content .header-box .tab-content .search-form {
   padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .header .header-content .header-box .tab-content .search-form .form-group {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header .header-content .header-box .tab-content .search-form .form-group .form-control {
   height: 40px;
@@ -340,7 +405,8 @@ button {
   padding-left: 44px;
   font-size: 16px;
   color: #63c9c6;
-  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 0px 1px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0px 1px rgba(0, 0, 0, 0.16);
 }
 .header .header-content .header-box .tab-content .search-form .form-group .input-icon {
   position: absolute;
@@ -374,7 +440,8 @@ button {
   position: relative;
 }
 .header .header-content .header-box .tab-content .search-form .nice-select:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   outline: 0;
 }
 .header .header-content .header-box .tab-content .search-form .nice-select::after {
@@ -391,14 +458,20 @@ button {
   margin-top: 11px;
 }
 .header .header-content .header-box .tab-content .features .features-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .header .header-content .header-box .tab-content .features .features-ul li {
   margin-right: 20px;
 }
 .header .header-content .header-box .tab-content .features .featurename {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   margin-bottom: 0;
 }
@@ -437,7 +510,7 @@ button {
   z-index: -1;
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   .header-box {
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
@@ -466,10 +539,19 @@ input[type=number] {
 .create-account .create-content {
   height: 100vh;
   background-color: #63c9c6;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .create-account .create-content .content-head {
   font-size: 50px;
@@ -498,7 +580,8 @@ input[type=number] {
   padding: 30px;
   padding-top: 60px;
   text-align: center;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   margin-top: 60px;
   position: relative;
 }
@@ -513,13 +596,22 @@ input[type=number] {
   border-radius: 50%;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   top: -40px;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
 }
 .create-account .create-content .teste .flag img {
   width: auto;
@@ -527,10 +619,19 @@ input[type=number] {
 .create-account .create-form {
   height: 100vh;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 522px;
   max-width: 100%;
   margin: auto;
@@ -555,12 +656,29 @@ input[type=number] {
   height: 45px;
   border: 1px solid #dddddd;
 }
+.create-account .create-form .c-form .form-group .form-control::-webkit-input-placeholder {
+  font-size: 14px;
+  color: rgba(38, 38, 39, 0.62);
+}
+.create-account .create-form .c-form .form-group .form-control::-moz-placeholder {
+  font-size: 14px;
+  color: rgba(38, 38, 39, 0.62);
+}
+.create-account .create-form .c-form .form-group .form-control:-ms-input-placeholder {
+  font-size: 14px;
+  color: rgba(38, 38, 39, 0.62);
+}
+.create-account .create-form .c-form .form-group .form-control::-ms-input-placeholder {
+  font-size: 14px;
+  color: rgba(38, 38, 39, 0.62);
+}
 .create-account .create-form .c-form .form-group .form-control::placeholder {
   font-size: 14px;
   color: rgba(38, 38, 39, 0.62);
 }
 .create-account .create-form .c-form .form-group .form-control:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   outline: 0;
   border-color: #63c9c6;
 }
@@ -578,9 +696,15 @@ input[type=number] {
   background-color: #43a3a0;
 }
 .create-account .create-form .create-or {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 25px;
 }
 .create-account .create-form .create-or span {
@@ -597,6 +721,8 @@ input[type=number] {
   margin-left: 9px;
 }
 .create-account .create-form .create-sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
@@ -607,9 +733,15 @@ input[type=number] {
   border-radius: 5px;
   display: inline-block;
   padding: 5px 15px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 5px;
 }
 .create-account .create-form .create-login {
@@ -634,9 +766,15 @@ input[type=number] {
 /* slider page */
 .slider-page .swiper-slide {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .slider-page .swiper-slide .swiper-content {
   position: relative;
@@ -674,7 +812,9 @@ input[type=number] {
 .slider-page .swiper-pagination {
   bottom: 10px;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 .slider-page .swiper-pagination .swiper-pagination-bullet {
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -714,7 +854,8 @@ input[type=number] {
 }
 @media (max-width: 1024px) {
   .header .header-content .header-box .tab-content .search-form {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .my-navbar {
@@ -782,7 +923,8 @@ input[type=number] {
   }
 
   .header .header-content .header-box .tab-content .features .features-ul {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .header .header-content .header-box .tab-content .features .features-ul li {
     margin-top: 10px;
@@ -798,7 +940,9 @@ input[type=number] {
 }
 @media (max-width: 479px) {
   .header .nav-tabs {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header .nav-tabs .nav-item {
     width: 100%;
@@ -806,7 +950,10 @@ input[type=number] {
   }
 
   .create-account .create-form .create-sign {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .create-account .create-form {
@@ -896,9 +1043,20 @@ input[type=number] {
 
 .sidenav .closebtn i {
   -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
-/*# sourceMappingURL=style.css.map */
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
