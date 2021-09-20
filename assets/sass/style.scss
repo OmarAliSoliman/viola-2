@@ -321,8 +321,8 @@ button {
     z-index: 9;
     .header-box {
       padding: 107px;
-      padding-bottom: 25px;
-      background-color: #fff;
+      // padding-bottom: 25px;
+      background-color: rgba($color: #fff, $alpha: 0.6);
       border-radius: 10px;
       .breadcrumb {
         background-color: $mainColor;
@@ -342,6 +342,7 @@ button {
             color: rgba(#262627, 40%);
             font-size: 16px;
             font-family: abr;
+            background-color: #fff;
           }
           .nav-link.active {
             background-color: $mainColor;
@@ -351,8 +352,16 @@ button {
         }
       }
       .tab-content {
+        background-color: #fff;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 30px;
+        padding-bottom: 10px;
         .search-form {
-          margin-top: 24px;
+          // padding-top: 24px;
+          // padding: 30px; 
+          padding-bottom: 0;
           display: flex;
           justify-content: space-between;
           .form-group {
@@ -378,7 +387,7 @@ button {
           .specialty,
           .doctor {
             .form-control {
-              width: 250px;
+              width: 220px;
             }
           }
           .city {
@@ -426,6 +435,8 @@ button {
           margin-top: 11px;
           .features-ul {
             display: flex;
+            // padding-left: 30px;
+
             li {
               margin-right: 20px;
             }
@@ -583,7 +594,7 @@ input[type="number"] {
     max-width: 100%;
     margin: auto;
     .logo {
-      width: 200px;
+      width: 150px;
     }
     .c-form {
       margin-top: -10px;
@@ -757,6 +768,12 @@ input[type="number"] {
   }
   .create-account .create-content .teste{
     width: 588px;
+  }
+  .create-account .create-form img{
+    width: auto !important;
+  }
+  .header, .swiper-slide{
+    height: 100vh !important;
   }
 }
 

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/swiper.css">
   <link rel="stylesheet" href="./assets/css/bootstrap-en.min.css">
+  <link rel="stylesheet" href="./assets/css/animate.css">
   <link rel="stylesheet" href="./assets/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/nice-select.css">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -31,8 +32,8 @@
         <i class="fas fa-times"></i>
       </a>
       <ul class="links list-unstyled wow animate__animated animate__bounceInDown">
-        <li><a href="">Home</a></li>
-        <li><a href="">About us</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./slider-page.html">About us</a></li>
         <li><a href="">Services</a></li>
         <li><a href="">Covid 19</a></li>
         <li><a href="">Contact us</a></li>
@@ -56,24 +57,24 @@
   <div class="my-navbar">
     <div class="container">
       <div class="navbar-parent">
-        <div class="logo">
+        <div class="logo wow animate__animated animate__bounceInDown">
           <a href="">
             <img src="./assets/images/logo.png" alt="">
           </a>
         </div>
         <div class="links">
           <ul class="list-unstyled ul-link">
-            <li><a href="">Home</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Covid 19</a></li>
-            <li><a href="">Contact us</a></li>
-            <li><a href="">Blogs</a></li>
-            <li><a href="">Help</a></li>
+            <li class=" wow animate__animated animate__fadeIn" data-wow-delay="0.2s"><a href="./index.html">Home</a></li>
+            <li class=" wow animate__animated animate__fadeIn" data-wow-delay="0.4s"><a href="./slider-page.html">About us</a></li>
+            <li class=" wow animate__animated animate__fadeIn" data-wow-delay="0.6s"><a href="">Services</a></li>
+            <li class=" wow animate__animated animate__fadeIn" data-wow-delay="0.8s"><a href="">Covid 19</a></li>
+            <li class=" wow animate__animated animate__fadeIn" data-wow-delay="1s"><a href="">Contact us</a></li>
+            <li class=" wow animate__animated animate__fadeIn" data-wow-delay="1.2s"><a href="">Blogs</a></li>
+            <li class=" wow animate__animated animate__fadeIn" data-wow-delay="1.4s"><a href="">Help</a></li>
           </ul>
         </div>
-        <div class="login">
-          <a href="">Login</a>
+        <div class="login wow animate__animated animate__bounceInDown">
+          <a href="./create-account.html">Login</a>
         </div>
         <div class="mobile-icon">
           <a onclick="openNav()">
@@ -90,7 +91,7 @@
     <div class="container">
       <div class="header-content">
         <div class="header-box">
-          <div class="breadcrumb">
+          <div class="breadcrumb wow animate__animated animate__flash">
             <h5>Just one Step and you can Book your Appointment</h5>
           </div>
           <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -107,7 +108,7 @@
             <div class="tab-pane fade show active" id="bookDoctor" role="tabpanel" aria-labelledby="bookDoctor-tab">
               <form action="" class="search-form">
                 <div class="form-group specialty">
-                  <select name="" class="form-control customSelect" id="">
+                  <select name="" class="form-control wow animate__animated animate__fadeIn customSelect" id="" data-wow-delay="0.2s">
                     <option value="" selected disabled>Choose Specialty</option>
                   </select>
                   <span class="input-icon">
@@ -115,7 +116,7 @@
                   </span>
                 </div>
                 <div class="form-group city">
-                  <select name="" class="form-control customSelect" id="">
+                  <select name="" class="form-control wow animate__animated animate__fadeIn customSelect" id="" data-wow-delay="0.6s">
                     <option value="" selected disabled>City</option>
                   </select>
                   <span class="input-icon">
@@ -123,7 +124,7 @@
                   </span>
                 </div>
                 <div class="form-group doctor">
-                  <select name="" class="form-control customSelect" id="">
+                  <select name="" class="form-control wow animate__animated animate__fadeIn customSelect" id="" data-wow-delay="1s">
                     <option value="" selected disabled>Doctor Name</option>
                   </select>
                   <span class="input-icon">
@@ -131,7 +132,7 @@
                   </span>
                 </div>
                 <div class="btn-submit">
-                  <button type="submit">
+                  <button type="submit" class="wow animate__animated animate__fadeIn" data-wow-delay="1.4s">
                     <span>Search</span>
                     <img src="./assets/images/search.png" alt="">
                   </button>
@@ -176,6 +177,7 @@
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/swiper.min.js"></script>
+  <script src="./assets/js/wow.js"></script>
   <script src="./assets/js/jquery.nice-select.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
