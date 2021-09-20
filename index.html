@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/swiper.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap-en.min.css">
+  <link rel="stylesheet" href="./assets/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/nice-select.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="splash">
+		<div>
+			<img src="./assets/images/loading.png" alt="logo" class="logo">
+      <div class="loading-bar"></div>
+		</div>
+	</div>
+
+  <div class="bg-sidenavOpen"></div>
+
+  <div id="mySidenav" class="sidenav">
+    <div class="container">
+      <img class="logo" src="./assets/images/logo.png" alt="">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <i class="fas fa-times"></i>
+      </a>
+      <ul class="links list-unstyled wow animate__animated animate__bounceInDown">
+        <li><a href="">Home</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Covid 19</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">Blogs</a></li>
+        <li><a href="">Help</a></li>  
+      </ul>
+      <div class="login wow animate__animated animate__bounceInDown">
+        <a href="./login.html">Sign in</a>
+      </div>
+    </div>
+    <div class="social">
+      <a href=""><i class="fab fa-facebook-f"></i></a>
+      <a href=""><i class="fab fa-twitter"></i></a>
+      <a href=""><i class="fab fa-linkedin-in"></i></a>
+      <a href=""><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+
+  <!-- navbar -->
+  <div class="my-navbar">
+    <div class="container">
+      <div class="navbar-parent">
+        <div class="logo">
+          <a href="">
+            <img src="./assets/images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="links">
+          <ul class="list-unstyled ul-link">
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Covid 19</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Help</a></li>
+          </ul>
+        </div>
+        <div class="login">
+          <a href="">Login</a>
+        </div>
+        <div class="mobile-icon">
+          <a onclick="openNav()">
+            <img src="./assets/images/menu.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- header -->
+  <div class="header" style="background-image: url('./assets/images/header.png');">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-box">
+          <div class="breadcrumb">
+            <h5>Just one Step and you can Book your Appointment</h5>
+          </div>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="bookDoctor-tab" data-toggle="tab" href="#bookDoctor" role="tab"
+                aria-controls="bookDoctor" aria-selected="true">Book a Doctor</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="callCenter-tab" data-toggle="tab" href="#callCenter" role="tab"
+                aria-controls="callCenter" aria-selected="false">Call Center</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="bookDoctor" role="tabpanel" aria-labelledby="bookDoctor-tab">
+              <form action="" class="search-form">
+                <div class="form-group specialty">
+                  <select name="" class="form-control customSelect" id="">
+                    <option value="" selected disabled>Choose Specialty</option>
+                  </select>
+                  <span class="input-icon">
+                    <img src="./assets/images/headseat.png" alt="">
+                  </span>
+                </div>
+                <div class="form-group city">
+                  <select name="" class="form-control customSelect" id="">
+                    <option value="" selected disabled>City</option>
+                  </select>
+                  <span class="input-icon">
+                    <img src="./assets/images/map.png" alt="">
+                  </span>
+                </div>
+                <div class="form-group doctor">
+                  <select name="" class="form-control customSelect" id="">
+                    <option value="" selected disabled>Doctor Name</option>
+                  </select>
+                  <span class="input-icon">
+                    <img src="./assets/images/doxtor.png" alt="">
+                  </span>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit">
+                    <span>Search</span>
+                    <img src="./assets/images/search.png" alt="">
+                  </button>
+                </div>
+              </form>
+              <div class="features">
+                <ul class="list-unstyled features-ul">
+                  <li> 
+                    <label for="featurename1" class="featurename">
+                      <input type="checkbox" name="" id="featurename1">
+                      <span class="feature-box"></span>
+                      <span class="label-world">feature num1</span>
+                    </label>
+                  </li>
+                  <li> 
+                    <label for="featurename2" class="featurename">
+                      <input type="checkbox" name="" id="featurename2">
+                      <span class="feature-box"></span>
+                      <span class="label-world">feature num1</span>
+                    </label>
+                  </li>
+                  <li> 
+                    <label for="featurename3" class="featurename">
+                      <input type="checkbox" name="" id="featurename3">
+                      <span class="feature-box"></span>
+                      <span class="label-world">feature num1</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="callCenter" role="tabpanel" aria-labelledby="callCenter-tab">Call Center
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/swiper.min.js"></script>
+  <script src="./assets/js/jquery.nice-select.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
