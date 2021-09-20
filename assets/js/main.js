@@ -75,5 +75,5 @@ const splash = 	document.querySelector(".splash");
 document.addEventListener("DOMContentLoaded",(e)=> {
 	setTimeout(()=> {
 		splash.classList.add("displayNone");
-	}, 1000)
+	}, 500)
 });

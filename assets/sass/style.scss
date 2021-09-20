@@ -322,7 +322,10 @@ button {
     .header-box {
       padding: 107px;
       // padding-bottom: 25px;
-      background-color: rgba($color: #fff, $alpha: 0.6);
+      background-color: rgba(255, 255, 255, 0.5);  
+      // backdrop-filter:blur(15px);  
+      position: relative;
+      z-index: 5;
       border-radius: 10px;
       .breadcrumb {
         background-color: $mainColor;
@@ -469,35 +472,32 @@ button {
           }
         }
       }
-      &::after {
-        content: url("../images/points.png");
-        position: absolute;
-        right: -110px;
-        bottom: -50px;
-        z-index: -1;
-      }
+    }
+    &::after {
+      content: url("../images/points.png");
+      position: absolute;
+      right: -110px;
+      bottom: -50px;
+      z-index: -1;
+    }
 
-      &::before {
-        content: url("../images/points.png");
-        position: absolute;
-        left: -50px;
-        bottom: 50px;
-        z-index: -1;
-      }
+    &::before {
+      content: url("../images/points.png");
+      position: absolute;
+      left: -70px;
+      bottom: 50px;
+      z-index: -1;
     }
   }
 }
 
-// @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-//   .header-box {
-//     -webkit-backdrop-filter: blur(10px);
-//     backdrop-filter: blur(10px);
-//     background-color: #F8F8F8;
-//   }
-//   .warning {
-//     display: none;
-//   }
-// }
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .header-box {
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.5);  
+  }
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -886,6 +886,14 @@ input[type="number"] {
   .slider-page .swiper-slide .swiper-content a{
     font-size: 16px;
   }
+  .header .header-content .header-box .tab-content{
+    border-top-right-radius: 0;
+  }
+  .header{
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 376px) {
@@ -917,6 +925,13 @@ input[type="number"] {
   //   margin-top: 30px;
   //   margin-bottom: 30px;
   // }
+  .header .header-content .header-box{
+    padding: 6px;
+  }
+  .header .header-content .header-box .breadcrumb{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 %inilize-ui-icons {
